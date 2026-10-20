@@ -5,7 +5,7 @@ import { isAdmin } from "@/lib/admin-auth";
 
 
 export async function GET() {
-  try {
+  try { 
     const { userId } = await auth();
 
     if (!userId) {
