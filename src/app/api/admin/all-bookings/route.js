@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { isAdmin } from "@/lib/admin-auth";
-
+export const dynamic = "force-dynamic";
 export async function GET() {
   try {
     

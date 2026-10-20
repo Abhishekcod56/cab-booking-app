@@ -196,7 +196,16 @@ async function ReceiptContent({ bookingId }) {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <div className="flex-1">
-                <PrintButton />
+                <PrintButton
+                  booking={{
+                    id: booking.id,
+                    createdAt: formatDate(booking.created_at),
+                    pickup: booking.pickup,
+                    destination: booking.destination,
+                    fareAmount: booking.fare_amount,
+                    paymentIntentId: booking.stripe_payment_intent_id,
+                  }}
+                />
               </div>
 
               <Link

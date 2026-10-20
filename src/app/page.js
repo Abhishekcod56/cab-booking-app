@@ -324,7 +324,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold">Plan your ride</h2>
             <p className="mt-2 text-sm text-gray-600">
               Choose a pickup and destination on the map, search for an
-              address, or use your device's location.
+              address, or use your device&apos;s location.
             </p>
 
             <div className="mt-5">

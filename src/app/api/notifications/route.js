@@ -1,7 +1,7 @@
 
 import { auth } from "@clerk/nextjs/server";
 import { createClient } from "@supabase/supabase-js";
-
+export const dynamic = "force-dynamic";
 function getSupabase() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SECRET_KEY;

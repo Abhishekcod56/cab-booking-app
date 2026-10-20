@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 import { createClient } from "@supabase/supabase-js";
 import { isApprovedDriver } from "@/lib/driver-auth";
 import { createNotification } from "@/lib/notifications";
-
+export const dynamic = "force-dynamic";
 const ALLOWED_TRANSITIONS = {
   requested: ["accepted", "cancelled"],
   accepted: ["in_progress", "cancelled"],

@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 import { createClient } from "@supabase/supabase-js";
 import { calculateFare } from "@/lib/fare";
 import { createNotification } from "@/lib/notifications";
-
+export const dynamic = "force-dynamic";
 function getSupabase() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const secretKey = process.env.SUPABASE_SECRET_KEY;
