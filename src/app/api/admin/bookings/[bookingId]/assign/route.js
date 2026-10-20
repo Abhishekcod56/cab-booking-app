@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { isAdmin } from "@/lib/admin-auth";
 import { createNotification } from "@/lib/notifications";
 
-export const runtime = "nodejs";
+
 
 function getSupabase() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
